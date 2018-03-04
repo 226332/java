@@ -4,7 +4,7 @@ public class Zespolona {
     public int im;
     public int re;
 
-    public Zespolona(int im, int re) {
+    public Zespolona(int re, int im) {
         this.im = im;
         this.re = re;
     }
@@ -23,7 +23,7 @@ public class Zespolona {
     }
 
     public void sprzerzenie() {
-        System.out.format("Sprzerzenie im: %d re: %d\n", this.im, -this.re);
+        System.out.format("Sprzerzenie %d %+di\n", this.re, -this.im);
     }
 
     public void dodawanie(Zespolona z) {
@@ -42,7 +42,7 @@ public class Zespolona {
     }
 
     public void wyswietlanie() {
-        System.out.format("im: %d re: %d\n", this.im, this.re);
+        System.out.format("%d  %+di\n", this.re, this.im);
     }
 
 }
