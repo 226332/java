@@ -14,10 +14,6 @@ public class Zespolona {
         this.re = 0;
     }
 
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-    }
-
     public int modul() {
         return (int) java.lang.Math.sqrt((im * im) + (re * re));
     }
