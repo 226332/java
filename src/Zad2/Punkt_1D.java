@@ -1,5 +1,12 @@
 package Zad2;
 
 public class Punkt_1D {
-    public int x;
+    protected int x;
+    public Punkt_1D(int x) {
+        this.x=x;
+    }
+    
+    public String toString() {
+        return String.valueOf(x);
+    }
 }
