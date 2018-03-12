@@ -1,8 +1,8 @@
 package Zad2;
 
-public class Punkt_1D {
+public class Point_1D {
     protected int x;
-    public Punkt_1D(int x) {
+    public Point_1D(int x) {
         this.x=x;
     }
     
