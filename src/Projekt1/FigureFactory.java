@@ -10,7 +10,7 @@ public class FigureFactory {
     public Figure createRandomFigure() {
         int nextFigure = _generator.nextInt(3);
         if (nextFigure == 0) {
-            return createRandomTriangle();
+             return createRandomTriangle();
         } else if (nextFigure == 1) {
             return createRandomSquare();
         } else
@@ -28,10 +28,11 @@ public class FigureFactory {
 
     public Square createRandomSquare() {
         Point_2D[] points = new Point_2D[2];
-        for (int i = 0; i < 2; i++) {
-            points[i] = new Point_2D(_generator.nextInt(FigureRenderer.MAX_X),
-                    _generator.nextInt(FigureRenderer.MAX_Y));
-        }
+        points[0] = new Point_2D(_generator.nextInt(FigureRenderer.MAX_X), _generator.nextInt(FigureRenderer.MAX_Y));
+        do {
+            int x = _generator.nextInt(FigureRenderer.MAX_X);
+            points[1] = new Point_2D(x, points[0].getY() + (x - points[0].getX()));
+        } while ((points[0].getX() >= points[1].getX()) && (points[0].getY() >= points[1].getY()));
         return new Square(points[0], points[1]);
     }
 

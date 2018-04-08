@@ -13,19 +13,27 @@ public class Point_2D extends Point_1D {
         this.y = point.y;
     }
 
-    public int getx() {
+    public int getX() {
         return this.x;
     }
 
-    public int gety() {
+    public int getY() {
         return this.y;
     }
-    
+
     public int distance(Point_2D p2) {
-        return (int) Math.sqrt((this.y-p2.y)*(this.y-p2.y)+(this.x-p2.x)*(this.x-p2.x));
+        return (int) Math.sqrt((this.y - p2.y) * (this.y - p2.y) + (this.x - p2.x) * (this.x - p2.x));
     }
 
     public String toString() {
         return String.valueOf(x) + " " + String.valueOf(y);
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 }
