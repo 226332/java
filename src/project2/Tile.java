@@ -7,7 +7,7 @@ public class Tile {
     private double          _grassLevel      = 128;
     private int             _x, _y;
     private boolean         _hasSnail        = false;
-    public static final int SIZE             = 10;
+    public static final int SIZE             = 55;
     public static final int MAX_X            = RenderFrame.MAX_WIDTH / SIZE;
     public static final int MAX_Y            = RenderFrame.MAX_HEIGHT / SIZE;
     public static final int MAX_GRASS        = 255;
